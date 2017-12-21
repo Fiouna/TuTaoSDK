@@ -1,0 +1,6 @@
+framework module TuTaoSDK {
+  umbrella header "TuTaoSDK.h"
+
+  export *
+  module * { export * }
+}
