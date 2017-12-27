@@ -11,6 +11,7 @@
 
 #define kTuTaoUI   [TuTaoUIHelper sharedInstance]
 
+NS_ASSUME_NONNULL_BEGIN
 @interface TuTaoUIHelper : NSObject
 
 #pragma mark - 新增UI属性 尺寸已根据横竖屏适配
@@ -81,3 +82,4 @@
 + (void)resetDimmedApplicationWindow;
 
 @end
+NS_ASSUME_NONNULL_END

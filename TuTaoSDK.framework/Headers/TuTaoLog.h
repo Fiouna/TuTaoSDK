@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- *  日志输出级别
- */
+
 typedef NS_ENUM(NSUInteger, TuTaoLogLevel){
     //关闭输出
     TuTaoLogLevelOff       = 0,
@@ -30,7 +28,7 @@ typedef NS_ENUM(NSUInteger, TuTaoLogLevel){
 /**
  *  日志输出级别 默认TuTaoLogLevelOff
  */
-@property (nonatomic) TuTaoLogLevel level;
+@property (nonatomic, assign) TuTaoLogLevel level;
 
 /**
  *  日志处理类

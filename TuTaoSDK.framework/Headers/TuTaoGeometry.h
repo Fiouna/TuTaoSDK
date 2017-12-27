@@ -41,14 +41,14 @@ CGFloat TuPointGetAngle(CGPoint centerPoint, CGPoint point1, CGPoint point2);
 
 #pragma mark - CGAffineTransform
 CGFloat TuAffineTransformGetAngle(CGAffineTransform t);
-CGSize TuAffineTransformGetScale(CGAffineTransform t);
+CGSize  TuAffineTransformGetScale(CGAffineTransform t);
 
 #pragma mark - CGPoint
 CGFloat TuPointGetDistance(CGPoint point1, CGPoint point2);
 CGPoint TuPointGetMidPoint(CGPoint point1, CGPoint point2);
 //两点之间，相距point1的距离，如果两点相同，则返回p1
 CGPoint TuPointWithDistance(CGPoint point1, CGPoint point2, CGFloat distance);
-//两条线相交的点
+//两条线相交的点,如果是平行线 则返回 {0,0}
 CGPoint TuPointOfIntersect(TuLine line1, TuLine line2);
 CGFloat TuPointGetDistanceOfPoint(CGPoint point, TuLine line);
 //points 为 CGPointValue
