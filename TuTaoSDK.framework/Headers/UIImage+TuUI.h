@@ -45,6 +45,14 @@ typedef NS_OPTIONS(NSInteger, TuImageBorderPosition) {
 - (UIColor *)tu_averageColor;
 
 /**
+ 返回图片是否含有alpha 通道
+ 
+ @return YES 有 NO 无
+ */
+- (BOOL)tu_imageHasAlpha;
+
+
+/**
  *  置灰当前图片
  *
  *  @return 已经置灰的图片

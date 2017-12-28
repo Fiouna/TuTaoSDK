@@ -40,6 +40,21 @@
 // 操作系统版本号，只获取第二级的版本号，例如 10.3.1 只会得到 10.3
 #define TU_IOS_VERSION ([[[UIDevice currentDevice] systemVersion] doubleValue])
 
+// 使用文件名(不带后缀名)创建一个UIImage对象，会被系统缓存，适用于大量复用的小资源图
+#define UIImageMake(img) \
+BeginIgnoreAvailabilityWarning \
+(TU_IOS_VERSION >= 8.0 ? [UIImage imageNamed:img inBundle:nil compatibleWithTraitCollection:nil] : [UIImage imageNamed:img]) \
+EndIgnoreAvailabilityWarning
+
+// 使用文件名(不带后缀名，仅限png)创建一个UIImage对象，不会被系统缓存，用于不被复用的图片，特别是大图
+#define UIImageMakeWithFile(name) UIImageMakeWithFileAndSuffix(name, @"png")
+#define UIImageMakeWithFileAndSuffix(name, suffix) [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@.%@", [[NSBundle mainBundle] resourcePath], name, suffix]]
+
+
+// 字体相关创建器，包括动态字体的支持
+#define UIFontMake(size) [UIFont systemFontOfSize:size]
+#define UIFontBoldMake(size) [UIFont boldSystemFontOfSize:size]
+
 
 #define TU_SCREEN_BOUNDS  [[UIScreen mainScreen] bounds]
 

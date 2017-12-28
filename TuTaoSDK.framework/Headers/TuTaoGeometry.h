@@ -70,6 +70,8 @@ CGPoint TuPointAdd(CGPoint point1, CGPoint point2);
 CGPoint TuPointOffset(CGPoint point, CGFloat dx, CGFloat dy);
 //point.x*sx point.y*sy
 CGPoint TuPointScale(CGPoint point, CGFloat sx, CGFloat sy);
+//p.x * s, p.y * s
+CGPoint TuPointMultiplyScale(CGPoint p, CGFloat s);
 
 CGPoint TuPointAverage(CGPoint point1, CGPoint point2);
 
@@ -94,7 +96,7 @@ CGSize TuSizeGetScale(CGSize size1, CGSize size2);
 
 
 
-#pragma mark - PicYoung 
+#pragma mark - PicYoung
 //获取镜像点之后的中心， 中心点，移动点，目标点
 CGPoint TuPointGetFlipCenter(CGPoint centerPoint, CGPoint point1, CGPoint point2);
 //Rotate
