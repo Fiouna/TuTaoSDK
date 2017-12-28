@@ -73,6 +73,9 @@ CGPoint TuPointScale(CGPoint point, CGFloat sx, CGFloat sy);
 
 CGPoint TuPointAverage(CGPoint point1, CGPoint point2);
 
+//获取rect 中心点
+CGPoint TuPointGetCenterWithRect(CGRect rect);
+
 //翻转坐标
 CGPoint TuPointFlip(CGPoint point);
 
