@@ -40,8 +40,8 @@ CGFloat TuRadianTo360Degree(CGFloat radians);
 CGFloat TuPointGetAngle(CGPoint centerPoint, CGPoint point1, CGPoint point2);
 
 #pragma mark - CGAffineTransform
-CGFloat TuAffineTransformGetAngle(CGAffineTransform t);
-CGSize  TuAffineTransformGetScale(CGAffineTransform t);
+CGFloat TuCGAffineTransformGetAngle(CGAffineTransform t);
+CGSize  TuCGAffineTransformGetScale(CGAffineTransform t);
 
 #pragma mark - CGPoint
 CGFloat TuPointGetDistance(CGPoint point1, CGPoint point2);
