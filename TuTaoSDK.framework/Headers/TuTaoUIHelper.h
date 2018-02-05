@@ -55,6 +55,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 为了模拟器能够调试UI，这里不区分模拟器和真机状态
 + (BOOL)isIPhoneX;
 
++ (BOOL)isIPhone5C;
+
 + (BOOL)isSimulator;
 
 // 用于获取 iPhoneX 安全区域的 insets
