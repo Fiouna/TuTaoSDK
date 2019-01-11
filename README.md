@@ -4,5 +4,5 @@
 
 # 使用
 
-项目使用Pod管理 添加 pod 'YYText' 即可
+项目使用Pod管理 添加 pod 'TuTaoSDK' 即可
 
